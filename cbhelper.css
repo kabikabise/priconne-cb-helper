@@ -1,0 +1,101 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+
+body{
+  background-color: #222831;
+  color: #FF4C29;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set gray background color and 100% height */
+.sidenav {
+  padding-top: 20px;
+  background-color: #222831;
+  height: 100%;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+  background-color: #555;
+  color: white;
+  padding: 15px;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .sidenav {
+    height: auto;
+    padding: 15px;
+  }
+  .row.content {height:auto;}
+}
+
+.teambox_selected{
+  background-color:#393E46;
+  border: 1px solid #FFD369;
+  margin: auto;
+  padding: 5px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.teambox_notselected{
+  background-color:#393E46;
+  border: 1px solid #CDCDCD;
+  margin: auto;
+  padding: 5px;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.teambox_title{
+  color: #EEEEEE;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+}
+
+.teambox_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.teambox_empty{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/unknown.jpg");
+  border-radius: 6px;
+  background-size: contain;
+  border: 1px solid transparent;
+  display: inline-block;
+}
+
+.vl {
+  border-left: 2px solid #CCCCCC;
+  height: 60px;
+}
+.box_pad{
+  padding: 2px;
+}
+
+.yuki{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/charas.png");
+  background-size: 804px;
+  border-radius: 6px;
+  background-position: -62px -124px;
+  opacity: 1;
+  cursor: inherit;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
