@@ -107,6 +107,8 @@ footer {
   background-size: contain;
   border: 1px solid transparent;
   display: inline-block;
+  cursor: inherit;
+  margin: 2px; filter: unset;
 }
 
 .support_title{
@@ -181,7 +183,16 @@ footer {
     align-items: center;
     justify-content: center;
 }
-.lima{
+
+.right_container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.unit{
+  cursor:pointer;
+}
+.u_lima{
   width: 60px;
   height: 60px;
   background-image: url("./images/charas.png");
@@ -189,7 +200,6 @@ footer {
   border-radius: 6px;
   background-position: -248px -372px;
   opacity: 1;
-  cursor: inherit;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
@@ -206,4 +216,5 @@ footer {
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
+
 }
