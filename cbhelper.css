@@ -192,6 +192,13 @@ footer {
 .unit{
   cursor:pointer;
 }
+
+.u_select{
+  opacity: 0.3;
+}
+.u_default{
+  opacity: 1;
+}
 .u_lima{
   width: 60px;
   height: 60px;
@@ -199,19 +206,63 @@ footer {
   background-size: 804px;
   border-radius: 6px;
   background-position: -248px -372px;
-  opacity: 1;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
 }
-.yuki{
+.u_miyako{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/charas.png");
+  background-size: 804px;
+  border-radius: 6px;
+  background-position: 0px -124px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_kuka{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/charas.png");
+  background-size: 804px;
+  border-radius: 6px;
+  background-position: -372px -186px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_jun{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/charas.png");
+  background-size: 804px;
+  border-radius: 6px;
+  background-position: -372px -310px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_kaori{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/charas.png");
+  background-size: 804px;
+  border-radius: 6px;
+  background-position: -248px 0px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_yuki{
   width: 60px;
   height: 60px;
   background-image: url("./images/charas.png");
   background-size: 804px;
   border-radius: 6px;
   background-position: -62px -124px;
-  opacity: 1;
   cursor: inherit;
   border: 1px solid transparent;
   display: inline-block;
