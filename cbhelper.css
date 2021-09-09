@@ -129,6 +129,28 @@ footer {
   padding: 10px;
 }
 
+.panel-heading{
+  background-color: #667283;
+  color: #BAC6D9;
+}
+.panel-title{
+  margin-left: 10px;
+  display: inline-block;
+}
+.frontline{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/position_front.png");
+  display: inline-block;
+}
+
+.center_container{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .yuki{
   width: 60px;
   height: 60px;
