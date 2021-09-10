@@ -200,6 +200,28 @@ function set_support1() {
 
   document.getElementById('team3_support').setAttribute("class", "teambox_inner");
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title");
+
+  unit_default_all();
+  for (let i = 0; i < team1_selected.length; i++){
+    var t1_x = "t1_"+ i.toString();
+    if(team1_selected[i] == 0){
+      document.getElementById(t1_x).setAttribute("class", "teambox_empty");
+    }else{
+      var u_unit = "u_"+team1_selected[i];
+      document.getElementById(t1_x).setAttribute("class", u_unit);
+      var element = document.getElementById(team1_selected[i]);
+      element.classList.add("u_select");
+      element.classList.remove("u_default");
+    }
+  }
+  if(sup1_selected == 0){
+    document.getElementById("t1_s").setAttribute("class", "teambox_empty");
+  }else{
+    document.getElementById("t1_s").setAttribute("class", sup1_selected);
+    var element = document.getElementById(sup1_selected[i]);
+    element.classList.add("u_select");
+    element.classList.remove("u_default");
+  }
 }
 
 function set_support2() {
@@ -221,6 +243,28 @@ function set_support2() {
 
   document.getElementById('team3_support').setAttribute("class", "teambox_inner");
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title");
+
+  unit_default_all();
+  for (let i = 0; i < team2_selected.length; i++){
+    var t2_x = "t2_"+ i.toString();
+    if(team2_selected[i] == 0){
+      document.getElementById(t2_x).setAttribute("class", "teambox_empty");
+    }else{
+      var u_unit = "u_"+team2_selected[i];
+      document.getElementById(t2_x).setAttribute("class", u_unit);
+      var element = document.getElementById(team2_selected[i]);
+      element.classList.add("u_select");
+      element.classList.remove("u_default");
+    }
+  }
+  if(sup2_selected == 0){
+    document.getElementById("t2_s").setAttribute("class", "teambox_empty");
+  }else{
+    document.getElementById("t2_s").setAttribute("class", sup2_selected);
+    var element = document.getElementById(sup2_selected[i]);
+    element.classList.add("u_select");
+    element.classList.remove("u_default");
+  }
 }
 
 function set_support3() {
@@ -242,6 +286,28 @@ function set_support3() {
 
   document.getElementById('team3_support').setAttribute("class", "teambox_inner_selected");
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title_selected");
+
+  unit_default_all();
+  for (let i = 0; i < team3_selected.length; i++){
+    var t3_x = "t3_"+ i.toString();
+    if(team3_selected[i] == 0){
+      document.getElementById(t3_x).setAttribute("class", "teambox_empty");
+    }else{
+      var u_unit = "u_"+team3_selected[i];
+      document.getElementById(t3_x).setAttribute("class", u_unit);
+      var element = document.getElementById(team3_selected[i]);
+      element.classList.add("u_select");
+      element.classList.remove("u_default");
+    }
+  }
+  if(sup3_selected == 0){
+    document.getElementById("t3_s").setAttribute("class", "teambox_empty");
+  }else{
+    document.getElementById("t3_s").setAttribute("class", sup3_selected);
+    var element = document.getElementById(sup3_selected[i]);
+    element.classList.add("u_select");
+    element.classList.remove("u_default");
+  }
 }
 
 
