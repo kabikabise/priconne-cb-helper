@@ -73,12 +73,12 @@
               </div>
             </div>
             <div class="box_pad"><div class="vl"></div></div>
-            <div class="teambox_inner">
-              <div id="team1_support" class="teambox_inner_container">
+            <div onclick="set_support1()" id="team1_support" class="teambox_inner">
+              <div class="teambox_inner_container">
                 <div class="teambox_empty"></div>
               </div>
             </div>
-            <div class="teambox_title">Support</div>
+            <div onclick="set_support1()" id="team1_support_title" class="teambox_title">Support</div>
           </div>
         </div>
       </div>
@@ -97,12 +97,12 @@
               </div>
             </div>
             <div class="box_pad"><div class="vl"></div></div>
-            <div class="teambox_inner">
-              <div id="team2_support" class="teambox_inner_container">
+            <div onclick="set_support2()" id="team2_support" class="teambox_inner">
+              <div class="teambox_inner_container">
                 <div class="teambox_empty"></div>
               </div>
             </div>
-            <div class="teambox_title">Support</div>
+            <div onclick="set_support2()" id="team2_support_title" class="teambox_title">Support</div>
           </div>
         </div>
       </div>
@@ -122,12 +122,12 @@
               </div>
             </div>
             <div class="box_pad"><div class="vl"></div></div>
-            <div class="teambox_inner">
+            <div onclick="set_support3()" id="team3_support" class="teambox_inner">
               <div class="teambox_inner_container">
                 <div class="teambox_empty"></div>
               </div>
             </div>
-            <div class="teambox_title">Support</div>
+            <div onclick="set_support3()" id="team3_support_title" class="teambox_title">Support</div>
           </div>
         </div>
       </div>
@@ -143,7 +143,7 @@
        </div>
       </div>
       -->
-
+      <p id="demo2"></p>
       <hr>
 
       <div class="panel-group">
@@ -155,11 +155,11 @@
            </div>
          </a>
          <div id="collapse1" class="panel-collapse collapse">
-           <div onclick="set_lima()" id="lima" class="u_lima unit"></div>
-           <div onclick="set_miyako()" id="miyako" class="u_miyako unit"></div>
-           <div onclick="set_kuka()" id="kuka" class="u_kuka unit"></div>
-           <div onclick="set_jun()" id="jun" class="u_jun unit"></div>
-           <div onclick="set_kaori()" id="kaori" class="u_kaori unit"></div>
+           <div onclick="set_unit('lima')" id="lima" class="u_lima unit"></div>
+           <div onclick="set_unit('miyako')" id="miyako" class="u_miyako unit"></div>
+           <div onclick="set_unit('kuka')" id="kuka" class="u_kuka unit"></div>
+           <div onclick="set_unit('jun')" id="jun" class="u_jun unit"></div>
+           <div onclick="set_unit('kaori')" id="kaori" class="u_kaori unit"></div>
          </div>
        </div>
        <div class="panel panel-default">
@@ -187,7 +187,6 @@
       </div>
       <br>
       <button class="clear_button" onclick="gettime()">Clear</button>
-      <p id="demo"></p>
       <!--
       <h3>Test</h3>
       <p>Lorem ipsum...</p>
