@@ -5,6 +5,52 @@ var team3_selected = [0,0,0,0];
 var sup1_selected = 0;
 var sup2_selected = 0;
 var sup3_selected = 0;
+const charnames = ["lima","miyako","kuka","jun","kaori"]
+
+function unit_default(unit_name){
+  var element = document.getElementById(unit_name);
+  element.classList.add("u_default");
+  element.classList.remove("u_select");
+}
+
+function unit_default_all(){
+  for (let i = 0; i < charnames.length; i++){
+    unit_default(charnames[i]);
+  }
+}
+
+function set_clear(){
+  unit_default_all();
+  active_team = 1;
+  team1_selected = [0,0,0,0];
+  team2_selected = [0,0,0,0];
+  team3_selected = [0,0,0,0];
+  sup1_selected = 0;
+  sup2_selected = 0;
+  sup3_selected = 0;
+  document.getElementById('t1_0').setAttribute("class", "teambox_empty");
+  document.getElementById('t1_1').setAttribute("class", "teambox_empty");
+  document.getElementById('t1_2').setAttribute("class", "teambox_empty");
+  document.getElementById('t1_3').setAttribute("class", "teambox_empty");
+
+  document.getElementById('team1').setAttribute("class", "teambox_inner_selected");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title_selected");
+
+  document.getElementById('team2').setAttribute("class", "teambox_inner");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+
+  document.getElementById('team3').setAttribute("class", "teambox_inner");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+
+  document.getElementById('team1_support').setAttribute("class", "teambox_inner");
+  document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
+
+  document.getElementById('team2_support').setAttribute("class", "teambox_inner");
+  document.getElementById('team2_support_title').setAttribute("class", "teambox_title");
+
+  document.getElementById('team3_support').setAttribute("class", "teambox_inner");
+  document.getElementById('team3_support_title').setAttribute("class", "teambox_title");
+}
 
 function set_team1(){
   active_team = 1;
@@ -25,6 +71,10 @@ function set_team1(){
 
   document.getElementById('team3_support').setAttribute("class", "teambox_inner");
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title");
+
+  for (let i = 0; i < team1_selected.length; i++){
+
+  }
 }
 
 function set_team2(){
