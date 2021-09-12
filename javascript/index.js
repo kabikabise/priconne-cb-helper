@@ -9,6 +9,22 @@ const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "
                   "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "karyl", "hatsune", "misaki", "ssuzume", "skaryl", "aoi", "chika", "maho", "yui", "yuki", "kyoka"
                   ]
+var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOAib0Cy9PAsvgepC5q_gk4PiQpAVV8mm7cEIRak0IcBU4UUk34o6KSmnYeZ8TQWWVe6PubRaC6wQ0/pub?gid=0&single=true&output=csv';
+
+function init() {
+  Papa.parse(public_spreadsheet_url, {
+    download: true,
+    header: true,
+    complete: sheetresult
+  })
+}
+window.addEventListener('DOMContentLoaded', init)
+
+function sheetresult(results){
+  var data = results.data
+  document.getElementById('demo2').innerHTML = data[0][0];
+
+}
 
 function unit_default(unit_name){
   var element = document.getElementById(unit_name);
