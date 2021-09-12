@@ -668,7 +668,7 @@ function set_unit(unit_name){
               var t2_k = "t2_" + k.toString();
               var x = document.getElementById(t2_k).className;
               document.getElementById(t2_j).setAttribute("class", x);
-              team2_selected[j] = team2_selected[j+2];
+              team2_selected[j] = team2_selected[j+1];
             }
             document.getElementById('t2_3').setAttribute("class", "teambox_empty");
             team2_selected[3] = 0;
@@ -690,7 +690,7 @@ function set_unit(unit_name){
               var t3_k = "t3_" + k.toString();
               var x = document.getElementById(t3_k).className;
               document.getElementById(t3_j).setAttribute("class", x);
-              team3_selected[j] = team3_selected[j+3];
+              team3_selected[j] = team3_selected[j+1];
             }
             document.getElementById('t3_3').setAttribute("class", "teambox_empty");
             team3_selected[3] = 0;
