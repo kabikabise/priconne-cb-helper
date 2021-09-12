@@ -1,0 +1,522 @@
+
+.u_lima{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 50.067%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_miyako{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_kuka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_jun{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_kaori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_matsuri{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_akino{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_makoto{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_nozomi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_pecorine{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_tamaki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+.u_ayane{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_misogi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hiyori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_tsumugi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_kurumi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_specorine{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 58.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_eriko{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_stamaki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_tomo{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_shizuru{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_rei{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_djeeta{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_monika{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_yukari{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_mahiru{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_shinobu{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_mimi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_anna{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_saren{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_illya{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_mifuyu{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_ninon{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_mitsuki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_rin{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_skokkoro{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_kokkoro{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_smifuyu{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_yori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_akari{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_io{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_shiori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_suzuna{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_rino{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_arisa{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 58.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_misaki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hatsune{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_karyl{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_misato{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_suzume{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_maho{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_chika{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 50% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_aoi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_skaryl{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_ssuzume{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_kyoka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_yui{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_yuki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 16.667%;
+  cursor: inherit;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hshinobu{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 41.667%;
+  cursor: inherit;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}

@@ -8,7 +8,8 @@ var sup3_selected = 0;
 var data = 0;
 const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
                   "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
-                  "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "karyl", "hatsune", "misaki", "ssuzume", "skaryl", "aoi", "chika", "maho", "yui", "yuki", "kyoka"
+                  "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "karyl", "hatsune", "misaki", "ssuzume", "skaryl", "aoi", "chika", "maho", "yui", "yuki", "kyoka",
+                  "hshinobu"
                   ]
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOAib0Cy9PAsvgepC5q_gk4PiQpAVV8mm7cEIRak0IcBU4UUk34o6KSmnYeZ8TQWWVe6PubRaC6wQ0/pub?gid=0&single=true&output=csv';
 
@@ -36,11 +37,11 @@ function boss1(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss1"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b1').innerHTML += initbox + databox + endbox;
@@ -58,11 +59,11 @@ function boss2(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss2"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b2').innerHTML += initbox + databox + endbox;
@@ -80,11 +81,11 @@ function boss3(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss3"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b3').innerHTML += initbox + databox + endbox;
@@ -102,11 +103,11 @@ function boss4(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss4"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b4').innerHTML += initbox + databox + endbox;
@@ -124,11 +125,11 @@ function boss5(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss5"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b5').innerHTML += initbox + databox + endbox;
@@ -146,11 +147,11 @@ function boss5en(){
   $.each(data, function( index, value ) {
     databox = 0;
     if (value.boss == "boss5enrage"){
-      databox = "<div class=\"u_" + value.u1 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b5en').innerHTML += initbox + databox + endbox;
@@ -244,7 +245,7 @@ function set_team1(){
       document.getElementById(t1_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
+      document.getElementById(t1_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team1_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -256,7 +257,7 @@ function set_team1(){
       document.getElementById(t2_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
+      document.getElementById(t2_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team2_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -268,7 +269,7 @@ function set_team1(){
       document.getElementById(t3_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
+      document.getElementById(t3_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team3_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -278,7 +279,7 @@ function set_team1(){
     document.getElementById("t1_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup1_selected;
-    document.getElementById("t1_s").setAttribute("class", u_sup);
+    document.getElementById("t1_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup1_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -312,7 +313,7 @@ function set_team2(){
       document.getElementById(t1_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
+      document.getElementById(t1_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team1_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -324,7 +325,7 @@ function set_team2(){
       document.getElementById(t2_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
+      document.getElementById(t2_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team2_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -336,7 +337,7 @@ function set_team2(){
       document.getElementById(t3_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
+      document.getElementById(t3_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team3_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -346,7 +347,7 @@ function set_team2(){
     document.getElementById("t2_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup2_selected;
-    document.getElementById("t2_s").setAttribute("class", u_sup);
+    document.getElementById("t2_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup2_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -380,7 +381,7 @@ function set_team3(){
       document.getElementById(t1_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
+      document.getElementById(t1_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team1_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -392,7 +393,7 @@ function set_team3(){
       document.getElementById(t2_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
+      document.getElementById(t2_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team2_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -404,7 +405,7 @@ function set_team3(){
       document.getElementById(t3_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
+      document.getElementById(t3_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team3_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -414,7 +415,7 @@ function set_team3(){
     document.getElementById("t3_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup3_selected;
-    document.getElementById("t3_s").setAttribute("class", u_sup);
+    document.getElementById("t3_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup3_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -448,7 +449,7 @@ function set_support1() {
       document.getElementById(t1_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
+      document.getElementById(t1_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team1_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -458,7 +459,7 @@ function set_support1() {
     document.getElementById("t1_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup1_selected;
-    document.getElementById("t1_s").setAttribute("class", u_sup);
+    document.getElementById("t1_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup1_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -492,7 +493,7 @@ function set_support2() {
       document.getElementById(t2_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
+      document.getElementById(t2_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team2_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -502,7 +503,7 @@ function set_support2() {
     document.getElementById("t2_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup2_selected;
-    document.getElementById("t2_s").setAttribute("class", u_sup);
+    document.getElementById("t2_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup2_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -536,7 +537,7 @@ function set_support3() {
       document.getElementById(t3_x).setAttribute("class", "teambox_empty");
     }else{
       var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
+      document.getElementById(t3_x).setAttribute("class", u_unit + "  b_default");
       var element = document.getElementById(team3_selected[i]);
       element.classList.add("u_select");
       element.classList.remove("u_default");
@@ -546,7 +547,7 @@ function set_support3() {
     document.getElementById("t3_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup3_selected;
-    document.getElementById("t3_s").setAttribute("class", u_sup);
+    document.getElementById("t3_s").setAttribute("class", u_sup + "  b_default");
     var element = document.getElementById(sup3_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
@@ -565,7 +566,7 @@ function set_unit(unit_name){
             var u_unit = "u_"+unit_name;
             var t1_i = "t1_"+i.toString();
             team1_selected[i] = unit_name;
-            document.getElementById(t1_i).setAttribute("class", u_unit);
+            document.getElementById(t1_i).setAttribute("class", u_unit + "  b_default");
             var element = document.getElementById(unit_name);
             element.classList.add("u_select");
             element.classList.remove("u_default");
@@ -579,7 +580,7 @@ function set_unit(unit_name){
             var u_unit = "u_"+unit_name;
             var t2_i = "t2_"+i.toString();
             team2_selected[i] = unit_name;
-            document.getElementById(t2_i).setAttribute("class", u_unit);
+            document.getElementById(t2_i).setAttribute("class", u_unit + "  b_default");
             var element = document.getElementById(unit_name);
             element.classList.add("u_select");
             element.classList.remove("u_default");
@@ -593,7 +594,7 @@ function set_unit(unit_name){
             var u_unit = "u_"+unit_name;
             var t3_i = "t3_"+i.toString();
             team3_selected[i] = unit_name;
-            document.getElementById(t3_i).setAttribute("class", u_unit);
+            document.getElementById(t3_i).setAttribute("class", u_unit + "  b_default");
             var element = document.getElementById(unit_name);
             element.classList.add("u_select");
             element.classList.remove("u_default");
@@ -604,7 +605,7 @@ function set_unit(unit_name){
       case 4:
         if(sup1_selected == 0){
           var u_unit = "u_"+unit_name;
-          document.getElementById("t1_s").setAttribute("class", u_unit);
+          document.getElementById("t1_s").setAttribute("class", u_unit + "  b_default");
           sup1_selected = unit_name;
           var element = document.getElementById(unit_name);
           element.classList.add("u_select");
@@ -614,7 +615,7 @@ function set_unit(unit_name){
       case 5:
         if(sup2_selected == 0){
           var u_unit = "u_"+unit_name;
-          document.getElementById("t2_s").setAttribute("class", u_unit);
+          document.getElementById("t2_s").setAttribute("class", u_unit + "  b_default");
           sup2_selected = unit_name;
           var element = document.getElementById(unit_name);
           element.classList.add("u_select");
@@ -624,7 +625,7 @@ function set_unit(unit_name){
       case 6:
         if(sup3_selected == 0){
           var u_unit = "u_"+unit_name;
-          document.getElementById("t3_s").setAttribute("class", u_unit);
+          document.getElementById("t3_s").setAttribute("class", u_unit + "  b_default");
           sup3_selected = unit_name;
           var element = document.getElementById(unit_name);
           element.classList.add("u_select");
