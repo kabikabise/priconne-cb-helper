@@ -49,7 +49,11 @@ function boss1(){
       databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\'" + value.link + "\">Link</a></div>";
-      fullbox = fullbox + initbox + databox + endbox;
+      if (fullbox == 0){
+        fullbox = initbox + databox + endbox;
+      }else{
+        fullbox = fullbox + initbox + databox + endbox;
+      }
     }
   });
   document.getElementById('b1').innerHTML = fullbox;
