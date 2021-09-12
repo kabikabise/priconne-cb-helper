@@ -23,7 +23,7 @@ init()
 
 function sheetresult(results){
   var data = results.data
-  $.each([ 52, 97 ], function( index, value ) {
+  $.each(data, function( index, value ) {
     alert( index + ": " + value );
   });
   //document.getElementById('demo2').innerHTML = data[1][1];
