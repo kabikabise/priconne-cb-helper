@@ -34,12 +34,6 @@ function boss1(){
   document.getElementById('b1').innerHTML = "";
 
   $.each(data, function( index, value ) {
-    //alert( value.boss );
-    /*
-    if (value.u1 == "arisa"){
-      alert( index + ": " + value.boss );
-    }
-    */
     databox = 0;
     if (value.boss == "boss1"){
       databox = "<div class=\"u_" + value.u1 + "\"></div>";
@@ -50,6 +44,116 @@ function boss1(){
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
       document.getElementById('b1').innerHTML += initbox + databox + endbox;
+    }
+  });
+}
+
+function boss2(){
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b2').innerHTML = "";
+
+  $.each(data, function( index, value ) {
+    databox = 0;
+    if (value.boss == "boss2"){
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
+      document.getElementById('b2').innerHTML += initbox + databox + endbox;
+    }
+  });
+}
+
+function boss3(){
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b3').innerHTML = "";
+
+  $.each(data, function( index, value ) {
+    databox = 0;
+    if (value.boss == "boss3"){
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
+      document.getElementById('b3').innerHTML += initbox + databox + endbox;
+    }
+  });
+}
+
+function boss4(){
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b4').innerHTML = "";
+
+  $.each(data, function( index, value ) {
+    databox = 0;
+    if (value.boss == "boss4"){
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
+      document.getElementById('b4').innerHTML += initbox + databox + endbox;
+    }
+  });
+}
+
+function boss5(){
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b5').innerHTML = "";
+
+  $.each(data, function( index, value ) {
+    databox = 0;
+    if (value.boss == "boss5"){
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
+      document.getElementById('b5').innerHTML += initbox + databox + endbox;
+    }
+  });
+}
+
+function boss5en(){
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b5en').innerHTML = "";
+
+  $.each(data, function( index, value ) {
+    databox = 0;
+    if (value.boss == "boss5enrage"){
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
+      document.getElementById('b5en').innerHTML += initbox + databox + endbox;
     }
   });
 }
