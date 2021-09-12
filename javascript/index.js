@@ -49,7 +49,6 @@ function boss1(){
       databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\"" + value.timeline + "\">Link</a></div>";
-      alert( index + ": " + value.timeline );
       document.getElementById('b1').innerHTML += initbox + databox + endbox;
     }
   });
