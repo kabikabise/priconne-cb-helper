@@ -5,6 +5,7 @@ var team3_selected = [0,0,0,0];
 var sup1_selected = 0;
 var sup2_selected = 0;
 var sup3_selected = 0;
+var data = 0;
 const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
                   "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "karyl", "hatsune", "misaki", "ssuzume", "skaryl", "aoi", "chika", "maho", "yui", "yuki", "kyoka"
@@ -20,13 +21,16 @@ function init() {
 }
 
 init()
+iteratedata()
 
 function sheetresult(results){
-  var data = results.data
+  data = results.data
+}
+
+function iteratedata(){
   $.each(data, function( index, value ) {
-    alert( value.name );
+    alert( value.boss );
   });
-  //document.getElementById('demo2').innerHTML = data[1][1];
 }
 
 function unit_default(unit_name){
