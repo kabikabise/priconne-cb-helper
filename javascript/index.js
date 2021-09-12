@@ -42,13 +42,13 @@ function boss1(){
     */
     databox = 0;
     if (value.boss == "wyvern"){
-      databox = "<div class=\"" + value.u1 + "\"></div>";
-      databox = "<div class=\"" + value.u2 + "\"></div>";
-      databox = "<div class=\"" + value.u3 + "\"></div>";
-      databox = "<div class=\"" + value.u4 + "\"></div>";
-      databox = "<div class=\"" + value.u5 + "\"></div>";
-      databox = "<div class=\"teambox_title\">" + value.dmg + "</div>";
-      databox = "<div class=\"teambox_title\"><a href=\'" + value.link + "\"></a></div>";
+      databox = "<div class=\"u_" + value.u1 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + "\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\"><a href=\'" + value.link + "\"></a></div>";
       document.getElementById('b1').innerHTML = initbox + databox + endbox;
     }
   });
