@@ -31,7 +31,7 @@ function boss1(){
   //var databox = "<div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_title\">1.5m</div><div class=\"teambox_title\">link</div>";
   var databox = 0;
   var endbox = "</div></div></div></div></div>";
-
+  var fullbox = 0;
 
   $.each(data, function( index, value ) {
     //alert( value.boss );
@@ -49,9 +49,10 @@ function boss1(){
       databox = databox + "<div class=\"u_" + value.u5 + "\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\"><a href=\'" + value.link + "\">Link</a></div>";
-      document.getElementById('b1').innerHTML = initbox + databox + endbox;
+      fullbox = fullbox + initbox + databox + endbox;
     }
   });
+  document.getElementById('b1').innerHTML = fullbox;
 }
 
 function unit_default(unit_name){
