@@ -662,9 +662,9 @@ function set_unit(unit_name){
           if (team2_selected[i] == unit_name){
             var u_unit = "u_" + unit_name;
             var t2_i = "t2_" + i.toString();
-            for (let j = i; j < team2_selected.length-2; j++){
+            for (let j = i; j < team2_selected.length-1; j++){
               var t2_j = "t2_" + j.toString();
-              var k = j+2;
+              var k = j+1;
               var t2_k = "t2_" + k.toString();
               var x = document.getElementById(t2_k).className;
               document.getElementById(t2_j).setAttribute("class", x);
@@ -684,9 +684,9 @@ function set_unit(unit_name){
           if (team3_selected[i] == unit_name){
             var u_unit = "u_" + unit_name;
             var t3_i = "t3_" + i.toString();
-            for (let j = i; j < team3_selected.length-3; j++){
+            for (let j = i; j < team3_selected.length-1; j++){
               var t3_j = "t3_" + j.toString();
-              var k = j+3;
+              var k = j+1;
               var t3_k = "t3_" + k.toString();
               var x = document.getElementById(t3_k).className;
               document.getElementById(t3_j).setAttribute("class", x);
