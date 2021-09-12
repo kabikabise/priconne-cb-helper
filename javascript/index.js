@@ -41,7 +41,7 @@ function boss1(){
     }
     */
     databox = 0;
-    if (value.boss == "wyvern"){
+    if (value.boss == "boss1"){
       databox = "<div class=\"u_" + value.u1 + "\"></div>";
       databox = databox + "<div class=\"u_" + value.u2 + "\"></div>";
       databox = databox + "<div class=\"u_" + value.u3 + "\"></div>";
