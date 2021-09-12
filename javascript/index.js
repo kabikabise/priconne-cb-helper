@@ -5,7 +5,10 @@ var team3_selected = [0,0,0,0];
 var sup1_selected = 0;
 var sup2_selected = 0;
 var sup3_selected = 0;
-const charnames = ["lima","miyako","kuka","jun","kaori"]
+const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
+                  "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
+                  "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "karyl", "hatsune", "misaki", "ssuzume", "skaryl", "aoi", "chika", "maho", "yui", "yuki", "kyoka"
+                  ]
 
 function unit_default(unit_name){
   var element = document.getElementById(unit_name);
@@ -32,6 +35,20 @@ function set_clear(){
   document.getElementById('t1_1').setAttribute("class", "teambox_empty");
   document.getElementById('t1_2').setAttribute("class", "teambox_empty");
   document.getElementById('t1_3').setAttribute("class", "teambox_empty");
+
+  document.getElementById('t2_0').setAttribute("class", "teambox_empty");
+  document.getElementById('t2_1').setAttribute("class", "teambox_empty");
+  document.getElementById('t2_2').setAttribute("class", "teambox_empty");
+  document.getElementById('t2_3').setAttribute("class", "teambox_empty");
+
+  document.getElementById('t3_0').setAttribute("class", "teambox_empty");
+  document.getElementById('t3_1').setAttribute("class", "teambox_empty");
+  document.getElementById('t3_2').setAttribute("class", "teambox_empty");
+  document.getElementById('t3_3').setAttribute("class", "teambox_empty");
+
+  document.getElementById('t1_s').setAttribute("class", "teambox_empty");
+  document.getElementById('t2_s').setAttribute("class", "teambox_empty");
+  document.getElementById('t3_s').setAttribute("class", "teambox_empty");
 
   document.getElementById('team1').setAttribute("class", "teambox_inner_selected");
   document.getElementById('team1_title').setAttribute("class", "teambox_title_selected");
@@ -112,8 +129,9 @@ function set_team1(){
   if(sup1_selected == 0){
     document.getElementById("t1_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t1_s").setAttribute("class", sup1_selected);
-    var element = document.getElementById(sup1_selected[i]);
+    var u_sup = "u_"+sup1_selected;
+    document.getElementById("t1_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup1_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -179,8 +197,9 @@ function set_team2(){
   if(sup2_selected == 0){
     document.getElementById("t2_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t2_s").setAttribute("class", sup2_selected);
-    var element = document.getElementById(sup2_selected[i]);
+    var u_sup = "u_"+sup2_selected;
+    document.getElementById("t2_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup2_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -246,8 +265,9 @@ function set_team3(){
   if(sup3_selected == 0){
     document.getElementById("t3_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t3_s").setAttribute("class", sup3_selected);
-    var element = document.getElementById(sup3_selected[i]);
+    var u_sup = "u_"+sup3_selected;
+    document.getElementById("t1_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup3_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -286,35 +306,12 @@ function set_support1() {
       element.classList.remove("u_default");
     }
   }
-  for (let i = 0; i < team2_selected.length; i++){
-    var t2_x = "t2_"+ i.toString();
-    if(team2_selected[i] == 0){
-      document.getElementById(t2_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team2_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
-  for (let i = 0; i < team3_selected.length; i++){
-    var t3_x = "t3_"+ i.toString();
-    if(team3_selected[i] == 0){
-      document.getElementById(t3_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team3_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
   if(sup1_selected == 0){
     document.getElementById("t1_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t1_s").setAttribute("class", sup1_selected);
-    var element = document.getElementById(sup1_selected[i]);
+    var u_sup = "u_"+sup1_selected;
+    document.getElementById("t1_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup1_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -341,18 +338,6 @@ function set_support2() {
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title");
 
   unit_default_all();
-  for (let i = 0; i < team1_selected.length; i++){
-    var t1_x = "t1_"+ i.toString();
-    if(team1_selected[i] == 0){
-      document.getElementById(t1_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team1_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
   for (let i = 0; i < team2_selected.length; i++){
     var t2_x = "t2_"+ i.toString();
     if(team2_selected[i] == 0){
@@ -365,23 +350,12 @@ function set_support2() {
       element.classList.remove("u_default");
     }
   }
-  for (let i = 0; i < team3_selected.length; i++){
-    var t3_x = "t3_"+ i.toString();
-    if(team3_selected[i] == 0){
-      document.getElementById(t3_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team3_selected[i];
-      document.getElementById(t3_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team3_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
   if(sup2_selected == 0){
     document.getElementById("t2_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t2_s").setAttribute("class", sup2_selected);
-    var element = document.getElementById(sup2_selected[i]);
+    var u_sup = "u_"+sup2_selected;
+    document.getElementById("t2_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup2_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -408,30 +382,6 @@ function set_support3() {
   document.getElementById('team3_support_title').setAttribute("class", "teambox_title_selected");
 
   unit_default_all();
-  for (let i = 0; i < team1_selected.length; i++){
-    var t1_x = "t1_"+ i.toString();
-    if(team1_selected[i] == 0){
-      document.getElementById(t1_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team1_selected[i];
-      document.getElementById(t1_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team1_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
-  for (let i = 0; i < team2_selected.length; i++){
-    var t2_x = "t2_"+ i.toString();
-    if(team2_selected[i] == 0){
-      document.getElementById(t2_x).setAttribute("class", "teambox_empty");
-    }else{
-      var u_unit = "u_"+team2_selected[i];
-      document.getElementById(t2_x).setAttribute("class", u_unit);
-      var element = document.getElementById(team2_selected[i]);
-      element.classList.add("u_select");
-      element.classList.remove("u_default");
-    }
-  }
   for (let i = 0; i < team3_selected.length; i++){
     var t3_x = "t3_"+ i.toString();
     if(team3_selected[i] == 0){
@@ -447,8 +397,9 @@ function set_support3() {
   if(sup3_selected == 0){
     document.getElementById("t3_s").setAttribute("class", "teambox_empty");
   }else{
-    document.getElementById("t3_s").setAttribute("class", sup3_selected);
-    var element = document.getElementById(sup3_selected[i]);
+    var u_sup = "u_"+sup3_selected;
+    document.getElementById("t3_s").setAttribute("class", u_sup);
+    var element = document.getElementById(sup3_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
   }
@@ -475,19 +426,62 @@ function set_unit(unit_name){
         }
         break;
       case 2:
-
+        for (let i = 0; i < team2_selected.length; i++){
+          if (team2_selected[i] == 0){
+            var u_unit = "u_"+unit_name;
+            var t2_i = "t2_"+i.toString();
+            team2_selected[i] = unit_name;
+            document.getElementById(t2_i).setAttribute("class", u_unit);
+            var element = document.getElementById(unit_name);
+            element.classList.add("u_select");
+            element.classList.remove("u_default");
+            break;
+          }
+        }
         break;
       case 3:
-
+        for (let i = 0; i < team3_selected.length; i++){
+          if (team3_selected[i] == 0){
+            var u_unit = "u_"+unit_name;
+            var t3_i = "t3_"+i.toString();
+            team3_selected[i] = unit_name;
+            document.getElementById(t3_i).setAttribute("class", u_unit);
+            var element = document.getElementById(unit_name);
+            element.classList.add("u_select");
+            element.classList.remove("u_default");
+            break;
+          }
+        }
         break;
       case 4:
-
+        if(sup1_selected == 0){
+          var u_unit = "u_"+unit_name;
+          document.getElementById("t1_s").setAttribute("class", u_unit);
+          sup1_selected = unit_name;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_select");
+          element.classList.remove("u_default");
+        }
         break;
       case 5:
-
+        if(sup2_selected == 0){
+          var u_unit = "u_"+unit_name;
+          document.getElementById("t2_s").setAttribute("class", u_unit);
+          sup2_selected = unit_name;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_select");
+          element.classList.remove("u_default");
+        }
         break;
       case 6:
-
+        if(sup3_selected == 0){
+          var u_unit = "u_"+unit_name;
+          document.getElementById("t3_s").setAttribute("class", u_unit);
+          sup3_selected = unit_name;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_select");
+          element.classList.remove("u_default");
+        }
         break;
     }
   }else{
@@ -513,22 +507,77 @@ function set_unit(unit_name){
             break;
           }
         }
-
         break;
       case 2:
-
+        for (let i = 0; i < team2_selected.length; i++){
+          if (team2_selected[i] == unit_name){
+            var u_unit = "u_" + unit_name;
+            var t2_i = "t2_" + i.toString();
+            for (let j = i; j < team2_selected.length-2; j++){
+              var t2_j = "t2_" + j.toString();
+              var k = j+2;
+              var t2_k = "t2_" + k.toString();
+              var x = document.getElementById(t2_k).className;
+              document.getElementById(t2_j).setAttribute("class", x);
+              team2_selected[j] = team2_selected[j+2];
+            }
+            document.getElementById('t2_3').setAttribute("class", "teambox_empty");
+            team2_selected[3] = 0;
+            var element = document.getElementById(unit_name);
+            element.classList.add("u_default");
+            element.classList.remove("u_select");
+            break;
+          }
+        }
         break;
       case 3:
-
+        for (let i = 0; i < team3_selected.length; i++){
+          if (team3_selected[i] == unit_name){
+            var u_unit = "u_" + unit_name;
+            var t3_i = "t3_" + i.toString();
+            for (let j = i; j < team3_selected.length-3; j++){
+              var t3_j = "t3_" + j.toString();
+              var k = j+3;
+              var t3_k = "t3_" + k.toString();
+              var x = document.getElementById(t3_k).className;
+              document.getElementById(t3_j).setAttribute("class", x);
+              team3_selected[j] = team3_selected[j+3];
+            }
+            document.getElementById('t3_3').setAttribute("class", "teambox_empty");
+            team3_selected[3] = 0;
+            var element = document.getElementById(unit_name);
+            element.classList.add("u_default");
+            element.classList.remove("u_select");
+            break;
+          }
+        }
         break;
       case 4:
-
+        if(sup1_selected == unit_name){
+          document.getElementById("t1_s").setAttribute("class", "teambox_empty");
+          sup1_selected = 0;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_default");
+          element.classList.remove("u_select");
+        }
         break;
       case 5:
-
+        if(sup2_selected == unit_name){
+          document.getElementById("t2_s").setAttribute("class", "teambox_empty");
+          sup2_selected = 0;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_default");
+          element.classList.remove("u_select");
+        }
         break;
       case 6:
-
+        if(sup3_selected == unit_name){
+          document.getElementById("t3_s").setAttribute("class", "teambox_empty");
+          sup3_selected = 0;
+          var element = document.getElementById(unit_name);
+          element.classList.add("u_default");
+          element.classList.remove("u_select");
+        }
         break;
     }
 
