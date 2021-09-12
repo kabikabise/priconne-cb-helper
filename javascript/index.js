@@ -414,7 +414,7 @@ function set_team3(){
     document.getElementById("t3_s").setAttribute("class", "teambox_empty");
   }else{
     var u_sup = "u_"+sup3_selected;
-    document.getElementById("t1_s").setAttribute("class", u_sup);
+    document.getElementById("t3_s").setAttribute("class", u_sup);
     var element = document.getElementById(sup3_selected);
     element.classList.add("u_select");
     element.classList.remove("u_default");
