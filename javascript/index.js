@@ -26,7 +26,8 @@ function sheetresult(results){
   data = results.data
 }
 
-function iteratedata(){
+function boss1(){
+  document.getElementById('b1').innerHTML = "pepega"
   $.each(data, function( index, value ) {
     //alert( value.boss );
     if (value.u1 == "arisa"){
