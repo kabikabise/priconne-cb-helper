@@ -27,11 +27,29 @@ function sheetresult(results){
 }
 
 function boss1(){
-  document.getElementById('b1').innerHTML = "pepega"
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  //var databox = "<div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_title\">1.5m</div><div class=\"teambox_title\">link</div>";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+
+
   $.each(data, function( index, value ) {
     //alert( value.boss );
+    /*
     if (value.u1 == "arisa"){
       alert( index + ": " + value.boss );
+    }
+    */
+    databox = 0;
+    if (value.boss == "wyvern"){
+      databox = "<div class=\"" + value.u1 + "\"></div>";
+      databox = "<div class=\"" + value.u2 + "\"></div>";
+      databox = "<div class=\"" + value.u3 + "\"></div>";
+      databox = "<div class=\"" + value.u4 + "\"></div>";
+      databox = "<div class=\"" + value.u5 + "\"></div>";
+      databox = "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = "<div class=\"teambox_title\"><a href=\'" + value.link + "\"></a></div>";
+      document.getElementById('b1').innerHTML = initbox + databox + endbox;
     }
   });
 }
