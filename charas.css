@@ -520,3 +520,13 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_hmiyako{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 50%;
+  cursor: inherit;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
