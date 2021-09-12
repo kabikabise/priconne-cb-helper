@@ -24,7 +24,7 @@ init()
 function sheetresult(results){
   var data = results.data
   $.each(data, function( index, value ) {
-    alert( index + ": " + value );
+    alert( value.name );
   });
   //document.getElementById('demo2').innerHTML = data[1][1];
 }
