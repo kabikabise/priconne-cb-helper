@@ -35,6 +35,15 @@ footer {
   .row.content {height:auto;}
 }
 
+.nav-justified .active a,
+.nav-justified .active a:hover{
+  background-color: #D89216;
+  color: #FFFFFF;
+}
+.pillwidth{
+  width: 750;
+}
+
 .teambox_center{
     display: flex;
     align-items: center;
