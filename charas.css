@@ -505,7 +505,6 @@
   background-image: url("./images/charas.png");
   border-radius: 6px;
   background-position: 8.333% 16.667%;
-  cursor: inherit;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
@@ -515,7 +514,6 @@
   background-image: url("./images/charas.png");
   border-radius: 6px;
   background-position: 66.667% 41.667%;
-  cursor: inherit;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
@@ -525,7 +523,24 @@
   background-image: url("./images/charas.png");
   border-radius: 6px;
   background-position: 66.667% 50%;
-  cursor: inherit;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hmisaki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 58.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_christina{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 58.333%;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
