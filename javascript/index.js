@@ -21,16 +21,15 @@ function init() {
 }
 
 init()
-iteratedata()
 
 function sheetresult(results){
   data = results.data
-    $.each(data, function( index, value ) {
-      alert( value.boss );
-    });
 }
 
 function iteratedata(){
+  $.each(data, function( index, value ) {
+    alert( value.boss );
+  });
 }
 
 function unit_default(unit_name){
