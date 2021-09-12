@@ -28,7 +28,10 @@ function sheetresult(results){
 
 function iteratedata(){
   $.each(data, function( index, value ) {
-    alert( value.boss );
+    //alert( value.boss );
+    if (value.u1 == "arisa"){
+      alert( index + ": " + value.boss );
+    }
   });
 }
 
