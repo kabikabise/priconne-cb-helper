@@ -28,10 +28,10 @@ function sheetresult(results){
 
 function boss1(){
   var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
-  //var databox = "<div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_empty\"></div><div class=\"teambox_title\">1.5m</div><div class=\"teambox_title\">link</div>";
   var databox = 0;
   var endbox = "</div></div></div></div></div>";
   var fullbox = 0;
+  document.getElementById('b1').innerHTML = "";
 
   $.each(data, function( index, value ) {
     //alert( value.boss );
