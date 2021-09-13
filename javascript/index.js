@@ -104,7 +104,7 @@ function boss4(){
     databox = 0;
     if (value.boss == "boss4"){
       for (let i = 0; i < team1_selected.length; i++){
-        switch(team1_selected){
+        switch(team1_selected[i]){
           case value.u1:
           case value.u2:
           case value.u3:
@@ -116,7 +116,7 @@ function boss4(){
             initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
             break;
         }
-        switch(team2_selected){
+        switch(team2_selected[i]){
           case value.u1:
           case value.u2:
           case value.u3:
@@ -128,7 +128,7 @@ function boss4(){
             initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
             break;
         }
-        switch(team3_selected){
+        switch(team3_selected[i]){
           case value.u1:
           case value.u2:
           case value.u3:
