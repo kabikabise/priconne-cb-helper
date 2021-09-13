@@ -227,3 +227,7 @@ footer {
   height: 60px;
   background-size: 804px;
 }
+
+.inactive_set{
+  opacity: 0.3;
+}
