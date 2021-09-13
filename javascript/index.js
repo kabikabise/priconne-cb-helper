@@ -104,42 +104,67 @@ function boss4(){
     databox = 0;
     if (value.boss == "boss4"){
       for (let i = 0; i < team1_selected.length; i++){
-        switch(team1_selected[i]){
-          case value.u1:
-          case value.u2:
-          case value.u3:
-          case value.u4:
-          case value.u5:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-            break;
-          default:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
-            break;
+        if (team1_selected[i] == value.u1){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
         }
-        switch(team2_selected[i]){
-          case value.u1:
-          case value.u2:
-          case value.u3:
-          case value.u4:
-          case value.u5:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-            break;
-          default:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
-            break;
+        if (team1_selected[i] == value.u2){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
         }
-        switch(team3_selected[i]){
-          case value.u1:
-          case value.u2:
-          case value.u3:
-          case value.u4:
-          case value.u5:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-            break;
-          default:
-            initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
-            break;
+        if (team1_selected[i] == value.u3){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
         }
+        if (team1_selected[i] == value.u4){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team1_selected[i] == value.u5){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team2_selected[i] == value.u1){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team2_selected[i] == value.u2){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team2_selected[i] == value.u3){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team2_selected[i] == value.u4){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team2_selected[i] == value.u5){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team3_selected[i] == value.u1){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team3_selected[i] == value.u2){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team3_selected[i] == value.u3){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team3_selected[i] == value.u4){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        if (team3_selected[i] == value.u5){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+          break;
+        }
+        initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
       }
 
       databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
