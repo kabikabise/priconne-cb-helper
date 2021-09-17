@@ -7,6 +7,7 @@ var sup2_selected = 0;
 var sup3_selected = 0;
 var data = 0;
 var availcount = [0,0,0,0,0,0];
+var hasselect = 0;
 const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
                   "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "kyaru", "hatsune", "misaki", "ssuzume", "skyaru", "aoi", "chika", "maho", "yui", "yuki", "kyoka",
@@ -28,123 +29,42 @@ function sheetresult(results){
   data = results.data
 }
 
-function boss1(){
+function boss1(bossname, bossid){
   var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
   var databox = 0;
   var endbox = "</div></div></div></div></div>";
   var fullbox = 0;
-  document.getElementById('b1').innerHTML = "";
+  document.getElementById(bossid).innerHTML = "";
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0,0];
-    if (value.boss == "boss1"){
-      for (let i = 0; i < team1_selected.length; i++){
-        if (team1_selected[i] == value.u1){
-          availcount[0] += 1;
-        }
-        if (team1_selected[i] == value.u2){
-          availcount[1] += 1;
-        }
-        if (team1_selected[i] == value.u3){
-          availcount[2] += 1;
-        }
-        if (team1_selected[i] == value.u4){
-          availcount[3] += 1;
-        }
-        if (team1_selected[i] == value.u5){
-          availcount[4] += 1;
-        }
-        if (team2_selected[i] == value.u1){
-          availcount[0] += 1;
-        }
-        if (team2_selected[i] == value.u2){
-          availcount[1] += 1;
-        }
-        if (team2_selected[i] == value.u3){
-          availcount[2] += 1;
-        }
-        if (team2_selected[i] == value.u4){
-          availcount[3] += 1;
-        }
-        if (team2_selected[i] == value.u5){
-          availcount[4] += 1;
-        }
-        if (team3_selected[i] == value.u1){
-          availcount[0] += 1;
-        }
-        if (team3_selected[i] == value.u2){
-          availcount[1] += 1;
-        }
-        if (team3_selected[i] == value.u3){
-          availcount[2] += 1;
-        }
-        if (team3_selected[i] == value.u4){
-          availcount[3] += 1;
-        }
-        if (team3_selected[i] == value.u5){
-          availcount[4] += 1;
-        }
+    hasselect = 0;
+    if (value.boss == bossname){
+      var element = document.getElementById(value.u1);
+      if(element.classList.contains("u_select"){
+        hasselect += 1;
+      }
+      var element = document.getElementById(value.u2);
+      if(element.classList.contains("u_select"){
+        hasselect += 1;
+      }
+      var element = document.getElementById(value.u3);
+      if(element.classList.contains("u_select"){
+        hasselect += 1;
+      }
+      var element = document.getElementById(value.u4);
+      if(element.classList.contains("u_select"){
+        hasselect += 1;
+      }
+      var element = document.getElementById(value.u5);
+      if(element.classList.contains("u_select"){
+        hasselect += 1;
       }
 
-      switch (active_team) {
-        case 1:
-          if (sup1_selected == value.u1){
-            availcount[5] += 1;
-          }
-          if (sup1_selected == value.u2){
-            availcount[5] += 1;
-          }
-          if (sup1_selected == value.u3){
-            availcount[5] += 1;
-          }
-          if (sup1_selected == value.u4){
-            availcount[5] += 1;
-          }
-          if (sup1_selected == value.u5){
-            availcount[5] += 1;
-          }
-          break;
-        case 2:
-          if (sup2_selected == value.u1){
-            availcount[5] += 1;
-          }
-          if (sup2_selected == value.u2){
-            availcount[5] += 1;
-          }
-          if (sup2_selected == value.u3){
-            availcount[5] += 1;
-          }
-          if (sup2_selected == value.u4){
-            availcount[5] += 1;
-          }
-          if (sup2_selected == value.u5){
-            availcount[5] += 1;
-          }
-          break;
-        case 3:
-          if (sup3_selected == value.u1){
-            availcount[5] += 1;
-          }
-          if (sup3_selected == value.u2){
-            availcount[5] += 1;
-          }
-          if (sup3_selected == value.u3){
-            availcount[5] += 1;
-          }
-          if (sup3_selected == value.u4){
-            availcount[5] += 1;
-          }
-          if (sup3_selected == value.u5){
-            availcount[5] += 1;
-          }
-          break;
-      }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
-      if (asum > 2){
-        initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-      }else{
+      if (hasselect == 0){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+      }else{
+      initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }
 
       databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
@@ -159,7 +79,7 @@ function boss1(){
       }else{
         databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
       }
-      document.getElementById('b1').innerHTML += initbox + databox + endbox;
+      document.getElementById(bossid).innerHTML += initbox + databox + endbox;
     }
   });
 }
