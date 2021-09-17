@@ -41,23 +41,23 @@ function boss1(bossname, bossid){
     hasselect = 0;
     if (value.boss == bossname){
       var element = document.getElementById(value.u1);
-      if(element.classList.contains("u_select"){
+      if(element.classList.contains("u_select")){
         hasselect += 1;
       }
       var element = document.getElementById(value.u2);
-      if(element.classList.contains("u_select"){
+      if(element.classList.contains("u_select")){
         hasselect += 1;
       }
       var element = document.getElementById(value.u3);
-      if(element.classList.contains("u_select"){
+      if(element.classList.contains("u_select")){
         hasselect += 1;
       }
       var element = document.getElementById(value.u4);
-      if(element.classList.contains("u_select"){
+      if(element.classList.contains("u_select")){
         hasselect += 1;
       }
       var element = document.getElementById(value.u5);
-      if(element.classList.contains("u_select"){
+      if(element.classList.contains("u_select")){
         hasselect += 1;
       }
 
