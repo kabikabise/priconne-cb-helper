@@ -6,7 +6,7 @@ var sup1_selected = 0;
 var sup2_selected = 0;
 var sup3_selected = 0;
 var data = 0;
-var availcount = [0,0,0,0,0];
+var availcount = [0,0,0,0,0,0];
 const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
                   "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "kyaru", "hatsune", "misaki", "ssuzume", "skyaru", "aoi", "chika", "maho", "yui", "yuki", "kyoka",
@@ -37,7 +37,7 @@ function boss1(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss1"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -86,7 +86,7 @@ function boss1(){
           availcount[4] += 1;
         }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
@@ -119,7 +119,7 @@ function boss2(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss2"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -168,7 +168,7 @@ function boss2(){
           availcount[4] += 1;
         }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
@@ -201,7 +201,7 @@ function boss3(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss3"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -249,8 +249,61 @@ function boss3(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
+        switch (active_team) {
+          case 1:
+            if (sup1_selected == value.u1){
+              availcount[5] += 1;
+            }
+            if (sup1_selected == value.u2){
+              availcount[5] += 1;
+            }
+            if (sup1_selected == value.u3){
+              availcount[5] += 1;
+            }
+            if (sup1_selected == value.u4){
+              availcount[5] += 1;
+            }
+            if (sup1_selected == value.u5){
+              availcount[5] += 1;
+            }
+            break;
+          case 2:
+            if (sup2_selected == value.u1){
+              availcount[5] += 1;
+            }
+            if (sup2_selected == value.u2){
+              availcount[5] += 1;
+            }
+            if (sup2_selected == value.u3){
+              availcount[5] += 1;
+            }
+            if (sup2_selected == value.u4){
+              availcount[5] += 1;
+            }
+            if (sup2_selected == value.u5){
+              availcount[5] += 1;
+            }
+            break;
+          case 3:
+            if (sup3_selected == value.u1){
+              availcount[5] += 1;
+            }
+            if (sup3_selected == value.u2){
+              availcount[5] += 1;
+            }
+            if (sup3_selected == value.u3){
+              availcount[5] += 1;
+            }
+            if (sup3_selected == value.u4){
+              availcount[5] += 1;
+            }
+            if (sup3_selected == value.u5){
+              availcount[5] += 1;
+            }
+            break;
+        }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
@@ -283,7 +336,7 @@ function boss4(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss4"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -332,7 +385,7 @@ function boss4(){
           availcount[4] += 1;
         }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
@@ -365,7 +418,7 @@ function boss5(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss5"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -414,7 +467,7 @@ function boss5(){
           availcount[4] += 1;
         }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
@@ -447,7 +500,7 @@ function boss5en(){
 
   $.each(data, function( index, value ) {
     databox = 0;
-    availcount = [0,0,0,0,0];
+    availcount = [0,0,0,0,0,0];
     if (value.boss == "boss5enrage"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
@@ -496,7 +549,7 @@ function boss5en(){
           availcount[4] += 1;
         }
       }
-      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
       }else{
