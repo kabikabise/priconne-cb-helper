@@ -545,3 +545,11 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_flex{
+  background-image: url("./images/unknown.jpg");
+  border-radius: 6px;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
