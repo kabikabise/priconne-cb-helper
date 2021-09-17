@@ -301,68 +301,59 @@ function boss4(){
 
   $.each(data, function( index, value ) {
     databox = 0;
+    availcount = [0,0,0,0,0];
     if (value.boss == "boss4"){
       for (let i = 0; i < team1_selected.length; i++){
         if (team1_selected[i] == value.u1){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[0] += 1;
         }
         if (team1_selected[i] == value.u2){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[1] += 1;
         }
         if (team1_selected[i] == value.u3){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[2] += 1;
         }
         if (team1_selected[i] == value.u4){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[3] += 1;
         }
         if (team1_selected[i] == value.u5){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[4] += 1;
         }
         if (team2_selected[i] == value.u1){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[0] += 1;
         }
         if (team2_selected[i] == value.u2){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[1] += 1;
         }
         if (team2_selected[i] == value.u3){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[2] += 1;
         }
         if (team2_selected[i] == value.u4){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[3] += 1;
         }
         if (team2_selected[i] == value.u5){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[4] += 1;
         }
         if (team3_selected[i] == value.u1){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[0] += 1;
         }
         if (team3_selected[i] == value.u2){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[1] += 1;
         }
         if (team3_selected[i] == value.u3){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[2] += 1;
         }
         if (team3_selected[i] == value.u4){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[3] += 1;
         }
         if (team3_selected[i] == value.u5){
-          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-          break;
+          availcount[4] += 1;
         }
+      }
+      var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4];
+      if (asum > 2){
+        initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+      }else{
         initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
       }
 
