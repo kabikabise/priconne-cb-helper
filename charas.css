@@ -547,8 +547,9 @@
 }
 
 .u_flex{
-  background-image: url("./images/unknown_s.jpg");
+  background-image: url("./images/charas.png");
   border-radius: 6px;
+  background-position: 66.667% 100%;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
