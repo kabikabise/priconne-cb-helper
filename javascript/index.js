@@ -108,7 +108,11 @@ function boss1(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b1').innerHTML += initbox + databox + endbox;
     }
   });
@@ -195,7 +199,11 @@ function boss2(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b2').innerHTML += initbox + databox + endbox;
     }
   });
@@ -282,7 +290,11 @@ function boss3(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b3').innerHTML += initbox + databox + endbox;
     }
   });
@@ -369,7 +381,11 @@ function boss4(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b4').innerHTML += initbox + databox + endbox;
     }
   });
@@ -456,7 +472,11 @@ function boss5(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b5').innerHTML += initbox + databox + endbox;
     }
   });
@@ -543,7 +563,11 @@ function boss5en(){
       databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+      }
       document.getElementById('b5en').innerHTML += initbox + databox + endbox;
     }
   });
