@@ -29,7 +29,7 @@ function sheetresult(results){
   data = results.data
 }
 
-function boss1(bossname, bossid){
+function boss(bossname, bossid){
   var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
   var databox = 0;
   var endbox = "</div></div></div></div></div>";
@@ -59,6 +59,59 @@ function boss1(bossname, bossid){
       var element = document.getElementById(value.u5);
       if(element.classList.contains("u_select")){
         hasselect += 1;
+      }
+      switch(active_team){
+        case 1:
+          if(sup1_selected == value.u1){
+            hasselect -= 1;
+          }
+          if(sup1_selected == value.u2){
+            hasselect -= 1;
+          }
+          if(sup1_selected == value.u3){
+            hasselect -= 1;
+          }
+          if(sup1_selected == value.u4){
+            hasselect -= 1;
+          }
+          if(sup1_selected == value.u5){
+            hasselect -= 1;
+          }
+          break;
+        case 2:
+          if(sup2_selected == value.u1){
+            hasselect -= 1;
+          }
+          if(sup2_selected == value.u2){
+            hasselect -= 1;
+          }
+          if(sup2_selected == value.u3){
+            hasselect -= 1;
+          }
+          if(sup2_selected == value.u4){
+            hasselect -= 1;
+          }
+          if(sup2_selected == value.u5){
+            hasselect -= 1;
+          }
+          break;
+        case 3:
+          if(sup3_selected == value.u1){
+            hasselect -= 1;
+          }
+          if(sup3_selected == value.u2){
+            hasselect -= 1;
+          }
+          if(sup3_selected == value.u3){
+            hasselect -= 1;
+          }
+          if(sup3_selected == value.u4){
+            hasselect -= 1;
+          }
+          if(sup3_selected == value.u5){
+            hasselect -= 1;
+          }
+          break;
       }
 
       if (hasselect == 0){
