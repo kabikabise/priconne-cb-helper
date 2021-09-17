@@ -58,14 +58,7 @@ footer {
   align-items: center;
   justify-content: center;
 }
-.teambox_inner_fixed{
-  background-color:#393E46;
-  border: 1px solid #CDCDCD;
-  margin: auto;
-  padding: 5px;
-  width: 700px;
-  border-radius: 10px;
-}
+
 .teambox_inner{
   background-color:#393E46;
   border: 1px solid #CDCDCD;
