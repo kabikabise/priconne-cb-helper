@@ -39,24 +39,24 @@ function set_boss(bossname, bossid){
     databox = 0;
     hasselect = 0;
     if (value.boss == bossname){
-      var element = document.getElementById(value.u1);
-      if(element.classList.contains("u_select")){
+      var element1 = document.getElementById(value.u1);
+      if(element1.classList.contains("u_select")){
         hasselect += 1;
       }
-      var element = document.getElementById(value.u2);
-      if(element.classList.contains("u_select")){
+      var element2 = document.getElementById(value.u2);
+      if(element2.classList.contains("u_select")){
         hasselect += 1;
       }
-      var element = document.getElementById(value.u3);
-      if(element.classList.contains("u_select")){
+      var element3 = document.getElementById(value.u3);
+      if(element3.classList.contains("u_select")){
         hasselect += 1;
       }
-      var element = document.getElementById(value.u4);
-      if(element.classList.contains("u_select")){
+      var element4 = document.getElementById(value.u4);
+      if(element4.classList.contains("u_select")){
         hasselect += 1;
       }
-      var element = document.getElementById(value.u5);
-      if(element.classList.contains("u_select")){
+      var element5 = document.getElementById(value.u5);
+      if(element5.classList.contains("u_select")){
         hasselect += 1;
       }
       switch(active_team){
