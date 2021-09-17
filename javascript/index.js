@@ -28,7 +28,7 @@ function sheetresult(results){
   data = results.data
 }
 
-function boss(bossname, bossid){
+function set_boss(bossname, bossid){
   var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
   var databox = 0;
   var endbox = "</div></div></div></div></div>";
