@@ -127,9 +127,9 @@ function set_boss(bossname, bossid){
       databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
       databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
       if(value.timeline == "#"){
-        databox = databox + "<div class=\"teambox_title\">no TL</div>";
+        databox = databox + "<div class=\"teambox_title\">Timeline</div>";
       }else{
-        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Link</a></div>";
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
       }
       document.getElementById(bossid).innerHTML += initbox + databox + endbox;
     }
