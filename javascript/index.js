@@ -85,59 +85,60 @@ function boss1(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
@@ -220,59 +221,59 @@ function boss2(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
@@ -355,59 +356,59 @@ function boss3(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
@@ -490,59 +491,59 @@ function boss4(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
@@ -625,59 +626,59 @@ function boss5(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
@@ -760,59 +761,59 @@ function boss5en(){
         if (team3_selected[i] == value.u5){
           availcount[4] += 1;
         }
-        switch (active_team) {
-          case 1:
-            if (sup1_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup1_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 2:
-            if (sup2_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup2_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-          case 3:
-            if (sup3_selected == value.u1){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u2){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u3){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u4){
-              availcount[5] += 1;
-            }
-            if (sup3_selected == value.u5){
-              availcount[5] += 1;
-            }
-            break;
-        }
+      }
+      switch (active_team) {
+        case 1:
+          if (sup1_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup1_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 2:
+          if (sup2_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup2_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
+        case 3:
+          if (sup3_selected == value.u1){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u2){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u3){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u4){
+            availcount[5] += 1;
+          }
+          if (sup3_selected == value.u5){
+            availcount[5] += 1;
+          }
+          break;
       }
       var asum = availcount[0] + availcount[1] + availcount[2] + availcount[3] + availcount[4] + availcount[5];
       if (asum > 2){
