@@ -1,0 +1,33 @@
+.teambox_empty{
+  width: 60px;
+  height: 60px;
+  background-image: url("./images/unknown.jpg");
+  border-radius: 6px;
+  background-size: contain;
+  border: 1px solid transparent;
+  display: inline-block;
+  cursor: inherit;
+  margin: 2px; filter: unset;
+}
+
+.unit{
+  cursor:pointer;
+}
+
+.u_select{
+  opacity: 0.3;
+  width: 50px;
+  height: 50px;
+  background-size:670px;
+}
+.u_default{
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  background-size:670px;
+}
+
+.center_flex{
+    display: flex;
+    justify-content: center;
+}
