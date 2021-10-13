@@ -140,6 +140,10 @@ footer {
   padding: 10px;
 }
 
+.big_pad{
+  padding-top: 10px;
+}
+
 .panel{
   width: 500px;
 }
