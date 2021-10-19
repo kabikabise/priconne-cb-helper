@@ -31,6 +31,9 @@ window.onload = function() {
 function sheetresult(results){
   data = results.data
 }
+function test(){
+set_boss('wyvern','b1')
+}
 
 function set_boss(bossname, bossid){
   var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
