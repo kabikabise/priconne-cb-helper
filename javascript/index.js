@@ -23,6 +23,7 @@ function init() {
 }
 
 init()
+set_boss('wyvern','b1')
 
 function sheetresult(results){
   data = results.data
@@ -39,99 +40,104 @@ function set_boss(bossname, bossid){
     databox = 0;
     hasselect = 0;
     if (value.boss == bossname){
-      var element1 = document.getElementById(value.u1);
-      if(element1.classList.contains("u_select")){
-        hasselect += 1;
-      }
-      var element2 = document.getElementById(value.u2);
-      if(element2.classList.contains("u_select")){
-        hasselect += 1;
-      }
-      var element3 = document.getElementById(value.u3);
-      if(element3.classList.contains("u_select")){
-        hasselect += 1;
-      }
-      var element4 = document.getElementById(value.u4);
-      if(element4.classList.contains("u_select")){
-        hasselect += 1;
-      }
-      var element5 = document.getElementById(value.u5);
-      if(element5.classList.contains("u_select")){
-        hasselect += 1;
-      }
-      switch(active_team){
-        case 1:
-          if(sup1_selected == value.u1){
-            hasselect -= 1;
-          }
-          if(sup1_selected == value.u2){
-            hasselect -= 1;
-          }
-          if(sup1_selected == value.u3){
-            hasselect -= 1;
-          }
-          if(sup1_selected == value.u4){
-            hasselect -= 1;
-          }
-          if(sup1_selected == value.u5){
-            hasselect -= 1;
-          }
-          break;
-        case 2:
-          if(sup2_selected == value.u1){
-            hasselect -= 1;
-          }
-          if(sup2_selected == value.u2){
-            hasselect -= 1;
-          }
-          if(sup2_selected == value.u3){
-            hasselect -= 1;
-          }
-          if(sup2_selected == value.u4){
-            hasselect -= 1;
-          }
-          if(sup2_selected == value.u5){
-            hasselect -= 1;
-          }
-          break;
-        case 3:
-          if(sup3_selected == value.u1){
-            hasselect -= 1;
-          }
-          if(sup3_selected == value.u2){
-            hasselect -= 1;
-          }
-          if(sup3_selected == value.u3){
-            hasselect -= 1;
-          }
-          if(sup3_selected == value.u4){
-            hasselect -= 1;
-          }
-          if(sup3_selected == value.u5){
-            hasselect -= 1;
-          }
-          break;
-      }
+      var s1 = document.getElementById('stage1');
+      var s2 = document.getElementById('stage2');
+      var s3 = document.getElementById('stage3');
+      if ( (s1.checked == true)&&(value.stage=='1') || (s2.checked == true)&&(value.stage=='2') || (s3.checked == true)&&(value.stage=='3') ){
+        var element1 = document.getElementById(value.u1);
+        if(element1.classList.contains("u_select")){
+          hasselect += 1;
+        }
+        var element2 = document.getElementById(value.u2);
+        if(element2.classList.contains("u_select")){
+          hasselect += 1;
+        }
+        var element3 = document.getElementById(value.u3);
+        if(element3.classList.contains("u_select")){
+          hasselect += 1;
+        }
+        var element4 = document.getElementById(value.u4);
+        if(element4.classList.contains("u_select")){
+          hasselect += 1;
+        }
+        var element5 = document.getElementById(value.u5);
+        if(element5.classList.contains("u_select")){
+          hasselect += 1;
+        }
+        switch(active_team){
+          case 1:
+            if(sup1_selected == value.u1){
+              hasselect -= 1;
+            }
+            if(sup1_selected == value.u2){
+              hasselect -= 1;
+            }
+            if(sup1_selected == value.u3){
+              hasselect -= 1;
+            }
+            if(sup1_selected == value.u4){
+              hasselect -= 1;
+            }
+            if(sup1_selected == value.u5){
+              hasselect -= 1;
+            }
+            break;
+          case 2:
+            if(sup2_selected == value.u1){
+              hasselect -= 1;
+            }
+            if(sup2_selected == value.u2){
+              hasselect -= 1;
+            }
+            if(sup2_selected == value.u3){
+              hasselect -= 1;
+            }
+            if(sup2_selected == value.u4){
+              hasselect -= 1;
+            }
+            if(sup2_selected == value.u5){
+              hasselect -= 1;
+            }
+            break;
+          case 3:
+            if(sup3_selected == value.u1){
+              hasselect -= 1;
+            }
+            if(sup3_selected == value.u2){
+              hasselect -= 1;
+            }
+            if(sup3_selected == value.u3){
+              hasselect -= 1;
+            }
+            if(sup3_selected == value.u4){
+              hasselect -= 1;
+            }
+            if(sup3_selected == value.u5){
+              hasselect -= 1;
+            }
+            break;
+        }
 
-      if (hasselect > 1){
-        initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
-      }else{
-        initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
-      }
+        if (hasselect > 1){
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container inactive_set\">";
+        }else{
+          initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+        }
 
-      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
-      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
-      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
-      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
-      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
-      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
-      databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
-      if(value.timeline == "#"){
-        databox = databox + "<div class=\"teambox_title\">Timeline</div>";
-      }else{
-        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
+        databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+        databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+        databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+        databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+        databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
+        databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+        databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
+        if(value.timeline == "#"){
+          databox = databox + "<div class=\"teambox_title\">Timeline</div>";
+        }else{
+          databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
+        }
+        document.getElementById(bossid).innerHTML += initbox + databox + endbox;
       }
-      document.getElementById(bossid).innerHTML += initbox + databox + endbox;
     }
   });
 }

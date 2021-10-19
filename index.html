@@ -223,17 +223,28 @@
           </div>
         </div>
     </div>
+
     <div class="col-sm-6">
       <br>
-      <div class="pillwidth">
-        <ul class="nav nav-tabs">
-          <li class="nav-item pill-1" onclick="set_boss('wyvern','b1')"><a data-toggle="tab" href="#b1">Wyvern</a></li>
-          <li class="nav-item pill-1" onclick="set_boss('rairai','b2')"><a data-toggle="tab" href="#b2">Rairai</a></li>
-          <li class="nav-item pill-1" onclick="set_boss('creeper','b3')"><a data-toggle="tab" href="#b3">Creeper</a></li>
-          <li class="nav-item pill-1" onclick="set_boss('turtle','b4')"><a data-toggle="tab" href="#b4">Turtle</a></li>
-          <li class="nav-item pill-1" onclick="set_boss('scorpion','b5')"><a data-toggle="tab" href="#b5">Scorpion</a></li>
-          <li class="nav-item pill-1" onclick="set_boss('scorpionenrage','b5en')"><a data-toggle="tab" href="#b5en">Scorpion Enrage</a></li>
+      <div id="exTab1" class="pillwidth">
+        <ul class="nav nav-pills">
+          <li class="active" onclick="set_boss('wyvern','b1')"><a class="nav-link bosstab" data-toggle="pill" href="#b1">Boss 1</a></li>
+          <li onclick="set_boss('rairai','b2')"><a class="nav-link bosstab" data-toggle="pill" href="#b2">Boss 2</a></li>
+          <li onclick="set_boss('creeper','b3')"><a class="nav-link bosstab" data-toggle="pill" href="#b3">Boss 3</a></li>
+          <li onclick="set_boss('turtle','b4')"><a class="nav-link bosstab" data-toggle="pill" href="#b4">Boss 4</a></li>
+          <li onclick="set_boss('scorpion','b5')"><a class="nav-link bosstab" data-toggle="pill" href="#b5">Boss 5</a></li>
+          <li onclick="set_boss('scorpionenrage','b5en')"><a class="nav-link bosstab" data-toggle="pill" href="#b5en">Boss 5 Enrage</a></li>
         </ul>
+        <div class="left_container">
+          <div>
+            <input checked="true" type="checkbox" data-toggle="toggle" id="stage1">
+            <label class="form-check-label" for="stage1">Stage 1</label>
+            <input checked="true" type="checkbox" class="form-check-input" id="stage2">
+            <label class="form-check-label" for="stage2">Stage 2</label>
+            <input type="checkbox" class="form-check-input" id="stage3">
+            <label checked="true" class="form-check-label" for="stage3">Stage 3</label>
+          </div>
+        </div>
         <div class="tab-content">
           <div id="b1" class="tab-pane fade">
 

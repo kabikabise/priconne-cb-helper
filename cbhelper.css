@@ -236,13 +236,41 @@ footer {
   opacity: 0.3;
 }
 
-
-.nav-pills .pill-1 .nav-link:not(.active) {
-    background-color: rgba(255, 0, 0, 0.5);
+/* pills styling */
+#exTab1 .nav-pills > li > a {
+  border-radius: 0;
+}
+div#exTab1.container {
+    padding-bottom: 64px;
+}
+li.active {
+    background: #D89216;
+}
+.nav-pills > li > a.bosstab {
+    color: #D89216;
+    border: none;
+    background-color: #574320;
+}
+.nav-pills > li > a:hover {
+    color: #D89216;
+    border: none;
+    background-color: white;
+}
+.nav-pills > li.active > a.bosstab {
+    background-color: #D89216;
+    color: white;
+    border: none;
 }
 
+.form-check-label{
+  color: white;
+}
 
-.nav-pills .pill-1 .nav-link {
-    background-color: rgba(255, 0, 0, 0.2);
-    color: white;
+.leftjust{
+  align-content: left;
+}
+.left_container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
