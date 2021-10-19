@@ -24,12 +24,8 @@ function init() {
 
 
 init()
-loaddefault()
+setTimeout(set_boss('wyvern','b1'), 2000)
 
-function loaddefault() {
-  await init();
-  set_boss('wyvern','b1')
-}
 function sheetresult(results){
   data = results.data
 }
