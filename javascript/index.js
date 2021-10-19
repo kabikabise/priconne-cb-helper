@@ -23,11 +23,14 @@ function init() {
 }
 
 
-init()
+document.addEventListener("DOMContentLoaded", function(event){
+  // your code here
+  init()
+  set_boss('wyvern','b1')
+});
 
 function sheetresult(results){
   data = results.data
-  set_boss('wyvern','b1')
 }
 
 function set_boss(bossname, bossid){
