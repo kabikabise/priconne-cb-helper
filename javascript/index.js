@@ -20,11 +20,12 @@ function init() {
     header: true,
     complete: sheetresult
   })
-  set_boss('wyvern','b1')
 }
 
 
 init()
+document.getElementById("b1").click()
+$("#b1").trigger('click');
 
 function sheetresult(results){
   data = results.data
