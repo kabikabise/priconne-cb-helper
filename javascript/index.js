@@ -24,15 +24,9 @@ function init() {
 
 window.onload = function() {
   init()
-    document.getElementById("b1").click()
-    $("#b1").trigger('click');
-  set_boss('wyvern','b1')
+  document.getElementById("bdef").click()
+  $("#bdef").trigger('click');
 };
-
-function loadinit(){
-  document.getElementById("b1").click()
-  $("#b1").trigger('click');
-}
 
 function sheetresult(results){
   data = results.data
