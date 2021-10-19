@@ -24,6 +24,8 @@ function init() {
 
 window.onload = function() {
   init()
+    document.getElementById("b1").click()
+    $("#b1").trigger('click');
   set_boss('wyvern','b1')
 };
 
