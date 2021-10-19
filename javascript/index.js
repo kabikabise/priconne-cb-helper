@@ -24,10 +24,10 @@ function init() {
 
 
 init()
-setTimeout(set_boss('wyvern','b1'), 2000)
 
 function sheetresult(results){
   data = results.data
+  set_boss('wyvern','b1')
 }
 
 function set_boss(bossname, bossid){
