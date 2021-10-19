@@ -22,9 +22,10 @@ function init() {
   })
 }
 
-
-init()
-setTimeout(loadinit, 5000)
+window.onload = function() {
+  init()
+  set_boss('wyvern','b1')
+};
 
 function loadinit(){
   document.getElementById("b1").click()
