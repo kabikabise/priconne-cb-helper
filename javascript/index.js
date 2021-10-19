@@ -24,7 +24,7 @@ function init() {
 
 
 init()
-setTimeout(myFunction, 5000)
+setTimeout(loadinit, 5000)
 
 function loadinit(){
   document.getElementById("b1").click()
