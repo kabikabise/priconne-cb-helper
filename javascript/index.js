@@ -23,16 +23,12 @@ function init() {
 }
 
 window.onload = function() {
-  init()
-  document.getElementById("bdef").click()
-  $("#bdef").trigger('click');
+  init();
+  set_boss('wyvern','b1');
 };
 
 function sheetresult(results){
   data = results.data
-}
-function test(){
-set_boss('wyvern','b1')
 }
 
 function set_boss(bossname, bossid){
