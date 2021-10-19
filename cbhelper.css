@@ -141,24 +141,41 @@ footer {
 }
 
 .big_pad{
-  padding-top: 10px;
+  padding-top: 50px;
 }
 
 .panel{
   width: 500px;
 }
+.panel-group .panel .panel-heading{
+  border-radius: 0px;
+}
+.panel-group .panel{
+  border-radius: 0px;
+}
 
 .panel-heading{
-  background-color: #667283;
+  background-color: #424242;
   color: #eeeeee;
 }
 .panel-collapse{
-  background-color: #151B24;
+  background-color: #212121;
   padding: 3px;
 }
 .panel-title{
   margin-left: 10px;
   display: inline-block;
+}
+.center_panel{
+    display: flex;
+    justify-content: center;
+}
+.leftflex{
+  display: flex;
+  justify-content: left;
+}
+.midpad{
+  margin-left: 50px;
 }
 
 .clear_button{
@@ -192,10 +209,6 @@ footer {
   background-size: contain;
   background-image: url("./images/position_back.png");
   display: inline-block;
-}
-.center_panel{
-    display: flex;
-    justify-content: center;
 }
 .center_container{
 
@@ -249,7 +262,7 @@ li.active {
 .nav-pills > li > a.bosstab {
     color: #D89216;
     border: none;
-    background-color: #574320;
+    background-color: #424242;
 }
 .nav-pills > li > a:hover {
     color: #D89216;
@@ -273,4 +286,12 @@ li.active {
     display: flex;
     align-items: center;
     justify-content: left;
+}
+.rightjust{
+  align-content: right;
+}
+.right_container{
+    display: flex;
+    align-items: center;
+    justify-content: right;
 }
