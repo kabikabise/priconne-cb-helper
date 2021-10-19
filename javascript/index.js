@@ -22,9 +22,14 @@ function init() {
   })
 }
 
-init()
-set_boss('wyvern','b1')
 
+init()
+loaddefault()
+
+function loaddefault() {
+  await init();
+  set_boss('wyvern','b1')
+}
 function sheetresult(results){
   data = results.data
 }
