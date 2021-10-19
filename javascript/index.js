@@ -20,14 +20,11 @@ function init() {
     header: true,
     complete: sheetresult
   })
+  set_boss('wyvern','b1')
 }
 
 
-document.addEventListener("DOMContentLoaded", function(event){
-  // your code here
-  init()
-  set_boss('wyvern','b1')
-});
+init()
 
 function sheetresult(results){
   data = results.data
