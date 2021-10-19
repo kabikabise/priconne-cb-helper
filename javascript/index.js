@@ -23,8 +23,8 @@ function init() {
 }
 
 window.onload = function() {
-  init();
-  set_boss('boss1','b1')
+  setTimeout(init(),10);
+  setTimeout(set_boss('boss1','b1'), 3000);
 };
 
 function sheetresult(results){
