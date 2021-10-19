@@ -24,7 +24,29 @@ function init() {
 
 window.onload = function() {
   init();
-  set_boss('wyvern','b1');
+  var initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+  var databox = 0;
+  var endbox = "</div></div></div></div></div>";
+  var fullbox = 0;
+  document.getElementById('b1').innerHTML = "";
+  $.each(data, function( index, value ) {
+    if (value.boss == 'wyvern'){
+      initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
+      databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
+      databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
+      databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
+      databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
+      if(value.timeline == "#"){
+        databox = databox + "<div class=\"teambox_title\">Timeline</div>";
+      }else{
+        databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
+      }
+      document.getElementById(bossid).innerHTML += initbox + databox + endbox;
+    }
+  }
 };
 
 function sheetresult(results){
