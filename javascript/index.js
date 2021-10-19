@@ -24,7 +24,7 @@ function init() {
 
 window.onload = function() {
   init();
-  document.getElementById("bdef").click();
+  setTimeout(document.getElementById("bdef").click(),5000);
 };
 
 function sheetresult(results){
