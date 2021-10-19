@@ -24,7 +24,7 @@ function init() {
 
 window.onload = function() {
   init();
-  setTimeout(document.getElementById("bdef").click(),5000);
+  set_boss('boss1','b1')
 };
 
 function sheetresult(results){
