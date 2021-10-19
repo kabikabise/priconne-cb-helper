@@ -24,8 +24,12 @@ function init() {
 
 
 init()
-document.getElementById("b1").click()
-$("#b1").trigger('click');
+setTimeout(myFunction, 5000)
+
+function loadinit(){
+  document.getElementById("b1").click()
+  $("#b1").trigger('click');
+}
 
 function sheetresult(results){
   data = results.data
