@@ -137,6 +137,11 @@ function set_boss(bossname, bossid){
         }else{
           databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
         }
+        if(value.verified == "yes"){
+          databox += "<div class=\"verified\"></div>";
+        }else{
+          databox += "<div class=\"notverified\"></div>";
+        }
         document.getElementById(bossid).innerHTML += initbox + databox + endbox;
       }
     }
