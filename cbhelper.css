@@ -296,15 +296,15 @@ li.active {
     justify-content: right;
 }
 .verified{
-  width: 30px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
   background-size: contain;
   background-image: url("./images/verified.png");
   display: inline-block;
 }
 .notverified{
-  width: 30px;
-  height: 30px;
+  width: 16px;
+  height: 16px;
   background-size: contain;
   background-image: url("./images/not_verified.png");
   display: inline-block;
