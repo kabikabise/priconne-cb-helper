@@ -545,10 +545,20 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
 .u_nanaka{
   background-image: url("./images/charas.png");
   border-radius: 6px;
   background-position: 0% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_ruka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 58.333% 8.333%;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
