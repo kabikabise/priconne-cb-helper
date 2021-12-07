@@ -309,3 +309,51 @@ li.active {
   background-image: url("./images/not_verified.png");
   display: inline-block;
 }
+
+.charwrapper{
+  position: relative;
+}
+
+.uepos{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.starpos{
+  position: absolute;
+  bottom: 10px;
+  left: 5px;
+  display: table-row;
+}
+
+
+.ue{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/equip.png");
+}
+.star{
+  width: 8px;
+  height: 8px;
+  background-size: contain;
+  background-image: url("./images/star.png");
+  display: table-cell;
+}
+.nostar{
+  width: 8px;
+  height: 8px;
+  background-size: contain;
+  background-image: url("./images/star_disabled.png");
+  display: table-cell;
+}
+
+.compbox_text{
+  color: #EEEEEE;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  white-space: nowrap;
+}

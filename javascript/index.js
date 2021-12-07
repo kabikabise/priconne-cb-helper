@@ -125,17 +125,82 @@ function set_boss(bossname, bossid){
           initbox = "<br><div class=\"teambox_center\"><div class=\"teambox\"><div class=\"teambox_container\"><div class=\"teambox_inner\"><div class=\"teambox_inner_container\">";
         }
 
-        databox = "<div class=\"u_" + value.u1 + " b_default\"></div>";
-        databox = databox + "<div class=\"u_" + value.u2 + " b_default\"></div>";
-        databox = databox + "<div class=\"u_" + value.u3 + " b_default\"></div>";
-        databox = databox + "<div class=\"u_" + value.u4 + " b_default\"></div>";
-        databox = databox + "<div class=\"u_" + value.u5 + " b_default\"></div>";
-        databox = databox + "<div class=\"teambox_title\">" + value.dmg + "</div>";
-        databox = databox + "<div class=\"teambox_title\">Stage " + value.stage + "</div>";
+        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u1 + " b_default\"></div>";
+        if(value.ue1=="yes"){
+          databox += "<div class=\"uepos ue\"></div>";
+        }
+        databox += "<div class=\"starpos\">";
+        var starcount = parseInt(value.s1);
+        for (let i = 0; i < starcount; i++){
+          databox += "<div class=\"star\"></div>";
+        }
+        for (let i = 0; i < 6-starcount; i++){
+          databox += "<div class=\"nostar\"></div>";
+        }
+        databox += "</div></div>";
+
+        databox += "<div class=\"charwrapper\"><div class=\"u_" + value.u2 + " b_default\"></div>";
+        if(value.ue2=="yes"){
+          databox += "<div class=\"uepos ue\"></div>";
+        }
+        databox += "<div class=\"starpos\">";
+        var starcount = parseInt(value.s2);
+        for (let i = 0; i < starcount; i++){
+          databox += "<div class=\"star\"></div>";
+        }
+        for (let i = 0; i < 6-starcount; i++){
+          databox += "<div class=\"nostar\"></div>";
+        }
+        databox += "</div></div>";
+
+        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u3 + " b_default\"></div>";
+        if(value.ue3=="yes"){
+          databox += "<div class=\"uepos ue\"></div>";
+        }
+        databox += "<div class=\"starpos\">";
+        var starcount = parseInt(value.s3);
+        for (let i = 0; i < starcount; i++){
+          databox += "<div class=\"star\"></div>";
+        }
+        for (let i = 0; i < 6-starcount; i++){
+          databox += "<div class=\"nostar\"></div>";
+        }
+        databox += "</div></div>";
+
+        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u4 + " b_default\"></div>";
+        if(value.ue4=="yes"){
+          databox += "<div class=\"uepos ue\"></div>";
+        }
+        databox += "<div class=\"starpos\">";
+        var starcount = parseInt(value.s4);
+        for (let i = 0; i < starcount; i++){
+          databox += "<div class=\"star\"></div>";
+        }
+        for (let i = 0; i < 6-starcount; i++){
+          databox += "<div class=\"nostar\"></div>";
+        }
+        databox += "</div></div>";
+
+        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u5 + " b_default\"></div>";
+        if(value.ue5=="yes"){
+          databox += "<div class=\"uepos ue\"></div>";
+        }
+        databox += "<div class=\"starpos\">";
+        var starcount = parseInt(value.s5);
+        for (let i = 0; i < starcount; i++){
+          databox += "<div class=\"star\"></div>";
+        }
+        for (let i = 0; i < 6-starcount; i++){
+          databox += "<div class=\"nostar\"></div>";
+        }
+        databox += "</div></div>";
+
+        databox = databox + "<div class=\"compbox_text\">" + value.dmg + "</div>";
+        databox = databox + "<div class=\"compbox_text\">Stage " + value.stage + "</div>";
         if(value.timeline == "#"){
-          databox = databox + "<div class=\"teambox_title\">Timeline</div>";
+          databox = databox + "<div class=\"compbox_text\">Timeline</div>";
         }else{
-          databox = databox + "<div class=\"teambox_title\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
+          databox = databox + "<div class=\"compbox_text\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
         }
         if(value.verified == "yes"){
           databox += "<div class=\"verified\"></div>";
