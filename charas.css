@@ -1,4 +1,57 @@
 
+.i_b1{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b1.png");
+  display: inline-block;
+}
+.i_b5{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b5.png");
+  display: inline-block;
+}
+.i_b5en{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b5en.png");
+  display: inline-block;
+}
+.i_b2{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b2.png");
+  display: inline-block;
+}
+.i_b3{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b3.png");
+  display: inline-block;
+}
+.i_b4{
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-image: url("./images/b4.png");
+  display: inline-block;
+}
+
+.u_flex{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 100%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
 .u_lima{
   background-image: url("./images/charas.png");
   border-radius: 6px;
@@ -564,54 +617,56 @@
   margin: 2px; filter: unset;
 }
 
-.u_flex{
+.u_xchika{
   background-image: url("./images/charas.png");
   border-radius: 6px;
-  background-position: 66.667% 100%;
+  background-position: 0 66.667%;
   border: 1px solid transparent;
   display: inline-block;
   margin: 2px; filter: unset;
 }
 
-.i_b1{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b1.png");
+.u_xkurumi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 66.667%;
+  border: 1px solid transparent;
   display: inline-block;
+  margin: 2px; filter: unset;
 }
-.i_b5{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b5.png");
+
+.u_xayane{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 66.667%;
+  border: 1px solid transparent;
   display: inline-block;
+  margin: 2px; filter: unset;
 }
-.i_b5en{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b5en.png");
+
+.u_nyui{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 66.667%;
+  border: 1px solid transparent;
   display: inline-block;
+  margin: 2px; filter: unset;
 }
-.i_b2{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b2.png");
+
+.u_nrei{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 66.667%;
+  border: 1px solid transparent;
   display: inline-block;
+  margin: 2px; filter: unset;
 }
-.i_b3{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b3.png");
+
+.u_nhiyori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 66.667%;
+  border: 1px solid transparent;
   display: inline-block;
-}
-.i_b4{
-  width: 16px;
-  height: 16px;
-  background-size: contain;
-  background-image: url("./images/b4.png");
-  display: inline-block;
+  margin: 2px; filter: unset;
 }
