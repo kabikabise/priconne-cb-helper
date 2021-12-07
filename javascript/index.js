@@ -153,7 +153,7 @@ function set_boss(bossname, bossid){
         }
         databox += "</div></div>";
 
-        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u3 + " b_default\"></div>";
+        databox += "<div class=\"charwrapper\"><div class=\"u_" + value.u3 + " b_default\"></div>";
         if(value.ue3=="yes"){
           databox += "<div class=\"uepos ue\"></div>";
         }
@@ -167,7 +167,7 @@ function set_boss(bossname, bossid){
         }
         databox += "</div></div>";
 
-        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u4 + " b_default\"></div>";
+        databox += "<div class=\"charwrapper\"><div class=\"u_" + value.u4 + " b_default\"></div>";
         if(value.ue4=="yes"){
           databox += "<div class=\"uepos ue\"></div>";
         }
@@ -181,7 +181,7 @@ function set_boss(bossname, bossid){
         }
         databox += "</div></div>";
 
-        databox = "<div class=\"charwrapper\"><div class=\"u_" + value.u5 + " b_default\"></div>";
+        databox += "<div class=\"charwrapper\"><div class=\"u_" + value.u5 + " b_default\"></div>";
         if(value.ue5=="yes"){
           databox += "<div class=\"uepos ue\"></div>";
         }
