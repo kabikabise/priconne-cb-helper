@@ -360,6 +360,7 @@ li.active {
 
 .s3_text{
   color: #d57388;
+  font-weight: bold;
   display: inline-block;
   align-items: center;
   justify-content: center;
