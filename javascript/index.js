@@ -195,12 +195,12 @@ function set_boss(bossname, bossid){
         }
         databox += "</div></div>";
 
-        databox = databox + "<div class=\"compbox_text\">" + value.dmg + "</div>";
-        databox = databox + "<div class=\"compbox_text\">Stage " + value.stage + "</div>";
+        databox += "<div class=\"compbox_text\">" + value.dmg + "</div>";
+        databox += "<div class=\"compbox_text\">Stage " + value.stage + "</div>";
         if(value.timeline == "#"){
-          databox = databox + "<div class=\"compbox_text\">Timeline</div>";
+          databox +="<div class=\"compbox_text\">Timeline</div>";
         }else{
-          databox = databox + "<div class=\"compbox_text\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
+          databox +="<div class=\"compbox_text\"><a target=\"_blank\" href=\"" + value.timeline + "\">Timeline</a></div>";
         }
         if(value.verified == "yes"){
           databox += "<div class=\"verified\"></div>";
