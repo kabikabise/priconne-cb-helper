@@ -357,3 +357,31 @@ li.active {
   padding: 10px;
   white-space: nowrap;
 }
+
+.s3_text{
+  color: #d57388;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  white-space: nowrap;
+}
+.s2_text{
+  color: #80a8d7;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  white-space: nowrap;
+}
+.s1_text{
+  color: #a7c199;
+  font-weight: bold;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  white-space: nowrap;
+}

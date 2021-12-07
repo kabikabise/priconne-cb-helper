@@ -196,7 +196,8 @@ function set_boss(bossname, bossid){
         databox += "</div></div>";
 
         databox += "<div class=\"compbox_text\">" + value.dmg + "</div>";
-        databox += "<div class=\"compbox_text\">Stage " + value.stage + "</div>";
+        databox += "<div class=\"s" + value.stage + "_text\">Stage " + value.stage + "</div>";
+        
         if(value.timeline == ""){
           databox +="<div class=\"compbox_text\">Timeline</div>";
         }else{
