@@ -8,9 +8,9 @@ var sup3_selected = 0;
 var data = 0;
 var hasselect = 0;
 const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "makoto", "akino", "matsuri", "tsumugi", "hiyori", "misogi", "ayane", "tamaki", "tomo", "stamaki", "eriko", "specorine", "kurumi", "djeeta", "rei", "shizuru",
-                  "mimi", "shinobu", "misogi", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
+                  "mimi", "shinobu", "mahiru", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "kyaru", "hatsune", "misaki", "ssuzume", "skyaru", "aoi", "chika", "maho", "yui", "yuki", "kyoka",
-                  "hshinobu", "hmiyako", "hmisaki", "christina", "nanaka", "ruka", "xchika", "xkurumi", "xayane", "nyui", "nrei", "nhiyori"
+                  "hshinobu", "hmiyako", "hmisaki", "christina", "nanaka", "ruka", "xchika", "xkurumi", "xayane", "nyui", "nrei", "nhiyori", "vshizuru", "veriko", "muimi", "kasumi", "ayumi"
                   ]
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOAib0Cy9PAsvgepC5q_gk4PiQpAVV8mm7cEIRak0IcBU4UUk34o6KSmnYeZ8TQWWVe6PubRaC6wQ0/pub?gid=0&single=true&output=csv';
 
@@ -197,7 +197,7 @@ function set_boss(bossname, bossid){
 
         databox += "<div class=\"compbox_text\">" + value.dmg + "</div>";
         databox += "<div class=\"s" + value.stage + "_text\">Stage " + value.stage + "</div>";
-        
+
         if(value.timeline == ""){
           databox +="<div class=\"compbox_text\">Timeline</div>";
         }else{
