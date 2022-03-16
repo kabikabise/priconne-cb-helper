@@ -715,3 +715,30 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_anne{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 66.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_lou{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_grea{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
