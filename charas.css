@@ -742,3 +742,121 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+
+.u_okuka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 16.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_oninon{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 25%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_rem{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 33.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_ram{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 41.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_emilia{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 50%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_ssuzuna{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 58.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_sio{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 66.667%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_ssaren{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_smakoto{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_skaori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_smaho{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_neneka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 58.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
