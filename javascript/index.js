@@ -11,7 +11,7 @@ const charnames = ["lima","miyako","kuka","jun","kaori", "pecorine", "nozomi", "
                   "mimi", "shinobu", "mahiru", "yukari", "monika", "ninon", "mifuyu", "illya", "saren", "anna", "smifuyu", "kokkoro", "skokkoro", "rin", "mitsuki", "yori", "akari",
                   "arisa", "rino", "suzuna", "shiori", "io", "suzume", "misato", "kyaru", "hatsune", "misaki", "ssuzume", "skyaru", "aoi", "chika", "maho", "yui", "yuki", "kyoka",
                   "hshinobu", "hmiyako", "hmisaki", "christina", "nanaka", "ruka", "xchika", "xkurumi", "xayane", "nyui", "nrei", "nhiyori", "vshizuru", "veriko", "muimi", "kasumi", "ayumi", "anne", "lou", "grea",
-                  "okuka", "oninon", "rem", "ram", "emilia", "ssuzuna", "sio", "ssaren", "smakoto", "skaori", "smaho", "neneka"
+                  "okuka", "oninon", "rem", "ram", "emilia", "ssuzuna", "sio", "ssaren", "smakoto", "skaori", "smaho", "neneka", "taoi", "chloe"
                   ]
 var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTOAib0Cy9PAsvgepC5q_gk4PiQpAVV8mm7cEIRak0IcBU4UUk34o6KSmnYeZ8TQWWVe6PubRaC6wQ0/pub?gid=0&single=true&output=csv';
 

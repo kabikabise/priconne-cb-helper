@@ -860,3 +860,21 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_taoi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 33.333% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_chloe{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 41.667% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
