@@ -878,3 +878,39 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_hmisogi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 75% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hkyoka{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 66.667% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_hmimi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 83.333% 0;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_luna{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 83.333% 8.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
