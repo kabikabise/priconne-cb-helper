@@ -977,3 +977,59 @@
   display: inline-block;
   margin: 2px; filter: unset;
 }
+
+.u_ppecorine{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 100%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+
+.u_mkasumi{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 83.333% 75%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_mshiori{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 0 83.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_iuzuki{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 8.333% 83.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_irin{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 16.667% 83.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
+.u_imio{
+  background-image: url("./images/charas.png");
+  border-radius: 6px;
+  background-position: 25% 83.333%;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin: 2px; filter: unset;
+}
+
