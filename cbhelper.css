@@ -388,7 +388,7 @@ li.active {
 .team_input{
   background:transparent;
   border:none;
-  width: 125px;
+  width: 90px;
 }
 input.team_input:focus {
     outline-width: 0;
