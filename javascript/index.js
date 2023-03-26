@@ -258,12 +258,15 @@ function set_clear(){
 
   document.getElementById('team1').setAttribute("class", "teambox_inner_selected");
   document.getElementById('team1_title').setAttribute("class", "teambox_title_selected team_input");
+  document.getElementById('team1_title').value="Team 1";
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
   document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
+  document.getElementById('team2_title').value="Team 2";
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
   document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
+  document.getElementById('team3_title').value="Team 3";
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
