@@ -257,13 +257,13 @@ function set_clear(){
   document.getElementById('t3_s').setAttribute("class", "teambox_empty");
 
   document.getElementById('team1').setAttribute("class", "teambox_inner_selected");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title_selected");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title_selected team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
@@ -278,13 +278,13 @@ function set_clear(){
 function set_team1(){
   active_team = 1;
   document.getElementById('team1').setAttribute("class", "teambox_inner_selected");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title_selected");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title_selected team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
@@ -346,13 +346,13 @@ function set_team1(){
 function set_team2(){
   active_team = 2;
   document.getElementById('team2').setAttribute("class", "teambox_inner_selected");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title_selected");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title_selected team_input");
 
   document.getElementById('team1').setAttribute("class", "teambox_inner");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
@@ -414,13 +414,13 @@ function set_team2(){
 function set_team3(){
   active_team = 3;
   document.getElementById('team3').setAttribute("class", "teambox_inner_selected");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title_selected");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title_selected team_input");
 
   document.getElementById('team1').setAttribute("class", "teambox_inner");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
@@ -482,13 +482,13 @@ function set_team3(){
 function set_support1() {
   active_team = 4;
   document.getElementById('team1').setAttribute("class", "teambox_inner");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner_selected");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title_selected");
@@ -526,13 +526,13 @@ function set_support1() {
 function set_support2() {
   active_team = 5;
   document.getElementById('team1').setAttribute("class", "teambox_inner");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");
@@ -570,13 +570,13 @@ function set_support2() {
 function set_support3() {
   active_team = 6;
   document.getElementById('team1').setAttribute("class", "teambox_inner");
-  document.getElementById('team1_title').setAttribute("class", "teambox_title");
+  document.getElementById('team1_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team2').setAttribute("class", "teambox_inner");
-  document.getElementById('team2_title').setAttribute("class", "teambox_title");
+  document.getElementById('team2_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team3').setAttribute("class", "teambox_inner");
-  document.getElementById('team3_title').setAttribute("class", "teambox_title");
+  document.getElementById('team3_title').setAttribute("class", "teambox_title team_input");
 
   document.getElementById('team1_support').setAttribute("class", "teambox_inner");
   document.getElementById('team1_support_title').setAttribute("class", "teambox_title");

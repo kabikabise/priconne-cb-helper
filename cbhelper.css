@@ -55,7 +55,6 @@ footer {
   padding: 5px;
   width: 50%;
   display: inline-flex;
-  align-items: center;
   justify-content: center;
 }
 
@@ -384,4 +383,13 @@ li.active {
   justify-content: center;
   padding: 10px;
   white-space: nowrap;
+}
+
+.team_input{
+  background:transparent;
+  border:none;
+  width: 125px;
+}
+input.team_input:focus {
+    outline-width: 0;
 }
